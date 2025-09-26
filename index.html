@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Kindness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1 id="message">Loading kindness...</h1>
+    </div>
+    
+    <script>
+        const messages = [
+            "Hey there! You're doing great. Hope you have an amazing day!",
+            "Thanks for being curious enough to scan this! You're awesome.",
+            "Hope you're having a good day. If not, tomorrow's a fresh start!",
+            // add more...
+        ];
+        
+        document.getElementById('message').textContent = 
+            messages[Math.floor(Math.random() * messages.length)];
+    </script>
+    
+    <!-- Google Analytics goes here -->
+</body>
+</html>
